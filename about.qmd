@@ -5,4 +5,4 @@ about:
   template: jolla
 ---
 
-Testing out my little blog post. 
+Experimenting with LLMs and showing the food around Philly and campus. 
