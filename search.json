@@ -4,21 +4,21 @@
     "href": "index.html",
     "title": "Using LLM prompts",
     "section": "",
-    "text": "Panera’s Mac and Cheese\n\n\n\nLearning\n\nFoodie\n\n\n\nRating it 1-10\n\n\n\n\n\nSep 3, 2025\n\n\nJoy\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nLLMs\n\nPrompting\n\nLogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+    "text": "Professor G’s Great GPT\n\n\n\nLearning\n\nAI\n\nLLMs\n\n\n\nBenefitting from AI in the math hemisphere\n\n\n\n\n\nSep 10, 2025\n\n\nJoy Wang\n\n\n\n\n\n\n\n\n\n\n\n\nPanera’s Mac and Cheese\n\n\n\nLearning\n\nFoodie\n\n\n\nRating it 1-10\n\n\n\n\n\nSep 3, 2025\n\n\nJoy\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nLLMs\n\nPrompting\n\nLogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/002_Mac_Cheese/paneras.html",
-    "href": "posts/002_Mac_Cheese/paneras.html",
-    "title": "Panera’s Mac and Cheese",
+    "objectID": "posts/003_AI/calcblue.html",
+    "href": "posts/003_AI/calcblue.html",
+    "title": "Professor G’s Great GPT",
     "section": "",
-    "text": "First up, a popular chain that began in 1987 as St. Louis Bread Company, a humble community bakery founded with a sourdough starter from San Francisco and a dream of putting a loaf of bread in every arm. Now, it operates as both Panera Bread® or Saint Louis Bread Co St. Louis Bread Company in 48 states, the District of Columbia and Canada!\n\n\n\nPanera's Mac and Cheese Bread Bowl\n\n\nA fan favorite across the board (save for the people who are lactose intolerant). One of my favorite meals to eat when at Panera Bread and overall a ten across the board. Not only does it come with a great vehicle for the sauce, but the taste is phenomenal."
+    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever, when prompted to give information about Week Four, as of September 14 it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When prompted about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help.\n\n\n\nRevision of response"
   },
   {
-    "objectID": "posts/002_Mac_Cheese/paneras.html#trying-paneras-very-popular-mac-and-cheese-in-a-bread-bowl",
-    "href": "posts/002_Mac_Cheese/paneras.html#trying-paneras-very-popular-mac-and-cheese-in-a-bread-bowl",
-    "title": "Panera’s Mac and Cheese",
+    "objectID": "posts/003_AI/calcblue.html#how-does-professor-gs-calcblue-gpt-work",
+    "href": "posts/003_AI/calcblue.html#how-does-professor-gs-calcblue-gpt-work",
+    "title": "Professor G’s Great GPT",
     "section": "",
-    "text": "First up, a popular chain that began in 1987 as St. Louis Bread Company, a humble community bakery founded with a sourdough starter from San Francisco and a dream of putting a loaf of bread in every arm. Now, it operates as both Panera Bread® or Saint Louis Bread Co St. Louis Bread Company in 48 states, the District of Columbia and Canada!\n\n\n\nPanera's Mac and Cheese Bread Bowl\n\n\nA fan favorite across the board (save for the people who are lactose intolerant). One of my favorite meals to eat when at Panera Bread and overall a ten across the board. Not only does it come with a great vehicle for the sauce, but the taste is phenomenal."
+    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever, when prompted to give information about Week Four, as of September 14 it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When prompted about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help.\n\n\n\nRevision of response"
   },
   {
     "objectID": "posts/000_test_post/index.html",
@@ -33,6 +33,20 @@
     "title": "A test post",
     "section": "",
     "text": "Read the following and see if you can answer the question:\n\n\nThere are three boxes in a stack. A pink one, a purple one and a green one. The pink one is in the middle of the stack with the purple below it. What is the color of the box on the bottom of the stack?\n\nMost likely you answered purple…\nBut it is possible you first said green (don’t worry if you did it is quite a common response!)\n\n\nIt’s a verbal visual problem that requires some deliberation and most likely for us to create a visual image of a stack of boxes as a reasoning aid.\nNotice also the complexity of the language used in the prompt to describe the scene. The use of natural language as opposed to a formal/logical calculus does hold the potential for ambiguity (multiple interpretations) and inexactness. However, it is the most normal/natural, efficient and broadly accessible way of communicating such information.\nNotice 1. The use of anaphor or reference. - Three BOXES -&gt; a pink/purple/green ONE as opposed to a pink box, a purple box and a green box. - The PINK ONE is in the middle ... the purple {BOX} below IT {the pink box}\nWe tend to try and avoid this kind of repetition to make our speech more coherent.\n\nAlthough the description in language may not be entirely concise, there is no real ambiguity as to how the boxes can be arranged. It must be: | Box | Stack position | | — | — | | GREEN | top | | PINK | middle | | PURPLE | bottom |\n\n\n\n\nGPT3.5 Turbo\n\nHad some difficulties and answered green\nLlama2 (chat 7B version)\n\n\nAnswered correctly (purple) and used some so-called chain-of-thought reasoning\n\nBing Chat (MS Co-pilot)\nThis LLM is GPT4 with some Microsoft specific tuning and RAG (search) additions.\nIt get’s it correct:\n\nThe color of the box on the bottom of the stack is purple. This is because the purple box is below the pink one, which is in the middle of the stack. Therefore, the purple box must be the lowest one. 🟪\n\nBut when you follow up and ask it to create visual representation of the box arrangement\n\nPROMPT: Can you create a visual representation of how the boxes are arranged?\n\nIt responds\n\nRESPONSE: Sure, I’ll try to create that. Here is a visual representation of how the boxes are arranged:\n\nAnd uses DALL-E3 to create 4 different attempts at a visual representation:\n\nNONE OF WHICH ARE CORRECT!!!"
+  },
+  {
+    "objectID": "posts/002_Mac_Cheese/paneras.html",
+    "href": "posts/002_Mac_Cheese/paneras.html",
+    "title": "Panera’s Mac and Cheese",
+    "section": "",
+    "text": "First up, a popular chain that began in 1987 as St. Louis Bread Company, a humble community bakery founded with a sourdough starter from San Francisco and a dream of putting a loaf of bread in every arm. Now, it operates as both Panera Bread® or Saint Louis Bread Co St. Louis Bread Company in 48 states, the District of Columbia and Canada!\n\n\n\nPanera's Mac and Cheese Bread Bowl\n\n\nA fan favorite across the board (save for the people who are lactose intolerant). One of my favorite meals to eat when at Panera Bread and overall a ten across the board. Not only does it come with a great vehicle for the sauce, but the taste is phenomenal."
+  },
+  {
+    "objectID": "posts/002_Mac_Cheese/paneras.html#trying-paneras-very-popular-mac-and-cheese-in-a-bread-bowl",
+    "href": "posts/002_Mac_Cheese/paneras.html#trying-paneras-very-popular-mac-and-cheese-in-a-bread-bowl",
+    "title": "Panera’s Mac and Cheese",
+    "section": "",
+    "text": "First up, a popular chain that began in 1987 as St. Louis Bread Company, a humble community bakery founded with a sourdough starter from San Francisco and a dream of putting a loaf of bread in every arm. Now, it operates as both Panera Bread® or Saint Louis Bread Co St. Louis Bread Company in 48 states, the District of Columbia and Canada!\n\n\n\nPanera's Mac and Cheese Bread Bowl\n\n\nA fan favorite across the board (save for the people who are lactose intolerant). One of my favorite meals to eat when at Panera Bread and overall a ten across the board. Not only does it come with a great vehicle for the sauce, but the taste is phenomenal."
   },
   {
     "objectID": "about.html",
