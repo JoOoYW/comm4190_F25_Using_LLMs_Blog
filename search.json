@@ -11,28 +11,28 @@
     "href": "posts/003_AI/calcblue.html",
     "title": "Professor G’s Great GPT",
     "section": "",
-    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever, when prompted to give information about Week Four, as of September 14 it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When prompted about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help, now covering orthogonal and orthonormal bases, linear transformations as matrices, and minor expansion in computing determinants.\n\n\n\nRevision of response"
+    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever as of September 14, when prompted to give information about Week Four, it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When asked about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help. It now covered topics like orthogonal and orthonormal bases, linear transformations as matrices, and minor expansion in computing determinants.\n\n\n\nRevision of response"
   },
   {
     "objectID": "posts/003_AI/calcblue.html#how-does-professor-gs-calcblue-gpt-work",
     "href": "posts/003_AI/calcblue.html#how-does-professor-gs-calcblue-gpt-work",
     "title": "Professor G’s Great GPT",
     "section": "",
-    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever, when prompted to give information about Week Four, as of September 14 it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When prompted about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help, now covering orthogonal and orthonormal bases, linear transformations as matrices, and minor expansion in computing determinants.\n\n\n\nRevision of response"
+    "text": "Based on his book with the same title, Prof G fed ChatGPT every problem and lesson plan covered for the semester. For those taking MATH 1400 or MATH 1410, Calc Star Green/Blue has proven incredibly useful and helpful.\n\n\n\nCalculus Blue, the book\n\n\nThe commands available include /intro, /ex, /score, and /test. Calling them for their purpose is fairly intuitive, while some like /score is when the user wants their test to be rated by an emoji or /go for a week’s specific material.\n\n\n\nCalc Star Blue, the GPT\n\n\nHowever as of September 14, when prompted to give information about Week Four, it limits itself to four of the nine learning objectives. It decided Week 4 was “all about determinants as volume-scaling factors”. When asked about the rest of the learning objectives, it corrected itself and revised the response it gave to my original question for help. It now covered topics like orthogonal and orthonormal bases, linear transformations as matrices, and minor expansion in computing determinants.\n\n\n\nRevision of response"
   },
   {
     "objectID": "posts/004_LivingWBook1/lwb1.html",
     "href": "posts/004_LivingWBook1/lwb1.html",
     "title": "Living With My Book, Part 1",
     "section": "",
-    "text": "Ananthaswamy’s “Why Machines Learn”"
+    "text": "Written as a narrative explanation of the mathematics that has brought us machine learning and the ongoing explosion of artificial intelligence, Ananthaswamy\n\n\n\nAnanthaswamy’s “Why Machines Learn”"
   },
   {
     "objectID": "posts/004_LivingWBook1/lwb1.html#my-first-experience-with-ananthaswamys-book-about-the-math-and-logic-behind-ai",
     "href": "posts/004_LivingWBook1/lwb1.html#my-first-experience-with-ananthaswamys-book-about-the-math-and-logic-behind-ai",
     "title": "Living With My Book, Part 1",
     "section": "",
-    "text": "Ananthaswamy’s “Why Machines Learn”"
+    "text": "Written as a narrative explanation of the mathematics that has brought us machine learning and the ongoing explosion of artificial intelligence, Ananthaswamy\n\n\n\nAnanthaswamy’s “Why Machines Learn”"
   },
   {
     "objectID": "posts/000_test_post/index.html",
