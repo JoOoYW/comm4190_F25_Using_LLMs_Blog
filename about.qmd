@@ -5,4 +5,4 @@ about:
   template: jolla
 ---
 
-Experimenting with LLMs and showing the food around Philly and campus. 
+Hi! My name is Joy and I am an all-around curious and creative person who loves exploring new ideas, solving problems, and making things. Crocheting and coding are my two favorite pastimes.

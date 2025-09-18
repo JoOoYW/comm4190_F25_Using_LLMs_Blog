@@ -7,9 +7,9 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/JoOoYW/comm4190_F25_Using_LLMs_Blog
+      - icon: instagram
+        href: https://www.instagram.com/jo0oooyyyy/?igsh=dnl5ZmtsbDhxODZp&utm_source=qr#
 format:
   html:
     theme: cyborg
