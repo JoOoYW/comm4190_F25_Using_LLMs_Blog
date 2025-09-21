@@ -5,4 +5,4 @@ about:
   template: jolla
 ---
 
-Hi! My name is Joy and I am an all-around curious and creative person who loves exploring new ideas, solving problems, and making things. Crocheting and coding are my two favorite pastimes.
+Hi! My name is Joy and I am an all-around curious and creative person who loves exploring new ideas, solving problems, and making things. Coding is my passion, besides web design. 
