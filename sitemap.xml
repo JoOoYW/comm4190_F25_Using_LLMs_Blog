@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://JoOoYW.github.io/Blog/index.html</loc>
-    <lastmod>2025-09-21T18:09:16.031Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2025-09-22T20:19:57.934Z</lastmod>
   </url>
   <url>
-    <loc>https://JoOoYW.github.io/Blog/posts/003_AI/calcblue.html</loc>
-    <lastmod>2025-09-21T18:09:16.033Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/posts/003_AI/calcblue.html</loc>
+    <lastmod>2025-09-22T20:19:57.936Z</lastmod>
   </url>
   <url>
-    <loc>https://JoOoYW.github.io/Blog/posts/004_LivingWBook1/lwb1.html</loc>
-    <lastmod>2025-09-21T18:09:16.036Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/posts/002_Mac_Cheese/paneras.html</loc>
+    <lastmod>2025-09-22T20:19:57.936Z</lastmod>
   </url>
   <url>
-    <loc>https://JoOoYW.github.io/Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2025-09-21T18:09:16.032Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2025-09-22T20:19:57.935Z</lastmod>
   </url>
   <url>
-    <loc>https://JoOoYW.github.io/Blog/posts/002_Mac_Cheese/paneras.html</loc>
-    <lastmod>2025-09-21T18:09:16.033Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/posts/004_LivingWBook1/lwb1.html</loc>
+    <lastmod>2025-09-22T20:19:57.938Z</lastmod>
   </url>
   <url>
-    <loc>https://JoOoYW.github.io/Blog/about.html</loc>
-    <lastmod>2025-09-21T18:09:16.031Z</lastmod>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/posts/005_AI2/ai2post.html</loc>
+    <lastmod>2025-09-22T20:19:57.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JoOoYW.github.io/comm4190_F25_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2025-09-22T20:19:57.933Z</lastmod>
   </url>
 </urlset>
