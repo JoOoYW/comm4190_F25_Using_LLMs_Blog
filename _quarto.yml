@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Exploring LLMs with Joy"
+  title: "Joy's Byte-Sized Blog"
   navbar:
     right:
       - about.qmd

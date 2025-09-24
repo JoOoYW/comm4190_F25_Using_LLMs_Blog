@@ -1,5 +1,5 @@
 ---
-title: Using LLM prompts
+title: LLM's, Hobbies, and the Philly Experience
 listing:
   contents: posts
   sort: date desc
