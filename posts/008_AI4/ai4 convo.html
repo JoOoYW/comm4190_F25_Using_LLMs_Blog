@@ -8,7 +8,7 @@
 
 <meta name="author" content="Joy Wang">
 <meta name="dcterms.date" content="2025-10-07">
-<meta name="description" content="Language models wgork with ‘tokens’ and not individual letters, making it difficult to recognize repeated characters within the tokenized word.">
+<meta name="description" content="With arbitrary requests to prove AI will NOT take over the world, many don’t really understand how language models actually work.">
 
 <title>On our way to trip up a robot! – Joy’s Byte-Sized Blog</title>
 <style>
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">On our way to trip up a robot!</h1>
                   <div>
         <div class="description">
-          Language models wgork with ‘tokens’ and not individual letters, making it difficult to recognize repeated characters within the tokenized word.
+          With arbitrary requests to prove AI will NOT take over the world, many don’t really understand how language models actually work.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -166,14 +166,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>In 2024, a <a href="https://community.openai.com/t/incorrect-count-of-r-characters-in-the-word-strawberry/829618">query</a> circulated around the internet of someone asking a simple question to ChatGPT, “How many ‘r’s’ in ‘strawberry’”. The answer? Two, apparently. Now how could that be? Where did ChatGPT go wrong? Well, it’s not where did it go wrong, but how much effort people put to boldly claim AI won’t take over jobs. ChatGPT and other LLM’s are based off of tokenization, where each word (not letter) is fed into an algorithm and</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="strawberry r.png" class="img-fluid figure-img"></p>
 <figcaption>Strawberry</figcaption>
 </figure>
 </div>
-<p>Instead of spelling, let’s do a math problem: If x and y are the tens digit and the units digit, respectively, of the product 725,278 * 67,066, what is the value of x + y.</p>
+<p>In 2024, a <a href="https://community.openai.com/t/incorrect-count-of-r-characters-in-the-word-strawberry/829618">query</a> circulated around the internet of someone asking a simple question to ChatGPT, “How many ‘r’s’ in ‘strawberry’”. The answer? Two, according to GPT-4o. Now how could that be? Where did ChatGPT go wrong? Well, it’s not where did it go wrong, but how much effort people put to boldly claim AI won’t take over jobs.</p>
+<p>ChatGPT and other LLM’s are based off of tokenization, taking the whole prompt and chunking it down to an average of four characters per token. Based on all of the values and weightings, it then passes them through different parameters (and a small amount of randomness), output whatever it thinks best matches your request. That means, it can’t directly count the number of letters in a word. For a word like Mississippi which can be broken down into {4I, 2P, 4S, 1M}, LLM’s see it as {1MISSISSPPI}. So in the case of straberry, it’s a token boundary issue where because the intervals of counting characters are determined in a tricky way, the model lacks an internal letter-level representation. One ‘r’ might be at the end of one token and two ’r’s in the middle of the next token), thus fumbling the count.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="token.png" class="img-fluid figure-img"></p>
+<figcaption>Example of how a prompt is broken down</figcaption>
+</figure>
+</div>
+<p>Instead of spelling, let’s try a math problem: If x and y are the tens digit and the units (ones) digit, respectively, of the product 725,278 * 67,066, what is the value of x + y?</p>
 
 
 
