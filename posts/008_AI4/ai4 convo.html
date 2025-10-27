@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -173,14 +208,21 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>In 2024, a <a href="https://community.openai.com/t/incorrect-count-of-r-characters-in-the-word-strawberry/829618">query</a> circulated around the internet of someone asking a simple question to ChatGPT, “How many ‘r’s’ in ‘strawberry’”. The answer? Two, according to GPT-4o. Now how could that be? Where did ChatGPT go wrong? Well, it’s not where did it go wrong, but how much effort people put to boldly claim AI won’t take over jobs.</p>
-<p>ChatGPT and other LLM’s are based off of tokenization, taking the whole prompt and chunking it down to an average of four characters per token. Based on all of the values and weightings, it then passes them through different parameters (and a small amount of randomness), output whatever it thinks best matches your request. That means, it can’t directly count the number of letters in a word. For a word like Mississippi which can be broken down into {4I, 2P, 4S, 1M}, LLM’s see it as {1MISSISSPPI}. So in the case of straberry, it’s a token boundary issue where because the intervals of counting characters are determined in a tricky way, the model lacks an internal letter-level representation. One ‘r’ might be at the end of one token and two ’r’s in the middle of the next token), thus fumbling the count.</p>
+<p>ChatGPT and other LLM’s are based off of tokenization, taking the whole prompt and chunking it down to an average of four characters per token. Based on all of the values and weightings, it then passes them through different parameters (and a small amount of randomness), output whatever it thinks best matches your request. That means, it can’t directly count the number of letters in a word. For a word like Mississippi which can be broken down into {4I, 2P, 4S, 1M}, LLM’s may see it as {1MISS, 1ISS, 1PPI}. So in the case of straberry, it’s a token boundary issue where because the intervals of counting characters are determined in a tricky way, the model lacks an internal letter-level representation. One ‘r’ might be at the end of one token and two ’r’s in the middle of the next token), thus fumbling the count.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="token.png" class="img-fluid figure-img"></p>
 <figcaption>Example of how a prompt is broken down</figcaption>
 </figure>
 </div>
-<p>Instead of spelling, let’s try a math problem: If x and y are the tens digit and the units (ones) digit, respectively, of the product 725,278 * 67,066, what is the value of x + y?</p>
+<p>Instead of spelling, let’s try a math problem: If x and y are the tens digit and the units (ones) digit, respectively, of the product 725,278 * 67,066, what is the value of x + y? The solution is quite easy to figure out, simply take 8 and 6 from the ones, multiply them together, and add up the digits of their product: 8 * 6 = 48 → 4 + 8 = 12.</p>
+<div id="5a61595c-eec0-4b89-9a2d-26d0b999dc09" class="cell" data-execution_count="26">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="dv">725278</span> <span class="sc">*</span> <span class="dv">67066</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 48641494348</code></pre>
+</div>
+</div>
+<p>I highly suggest using <a href="https://huggingface.co/spaces/Xenova/the-tokenizer-playground">the tokenizer website</a> to see how GPT splits the prompt into tokens!</p>
 
 
 
