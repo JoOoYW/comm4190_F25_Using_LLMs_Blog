@@ -1,23 +1,6 @@
 [
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/14/jobhelp.html",
-      "/posts/13/gifts.html",
-      "/posts/12/tshirt.html",
-      "/posts/11/finalmeal.html",
-      "/posts/010_AI5/ai future.html",
-      "/posts/17/book3.html",
-      "/posts/008_AI4/ai4 convo.html",
-      "/posts/15/book2.html",
-      "/posts/009_Food3/benandjerry.html",
-      "/posts/007_AI3/dogtoys.html",
-      "/posts/005_CrochetAI1/crochet1.html",
-      "/posts/006_Food2/redcart food2.html",
-      "/posts/004_AI2/ai2post.html",
-      "/posts/003_LivingWBook1/lwb1.html",
-      "/posts/002_AI/calcblue.html",
-      "/posts/001_Food1/paneras.html"
-    ]
+    "items": []
   }
 ]
