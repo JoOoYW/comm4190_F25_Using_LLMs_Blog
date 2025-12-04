@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Joy Wang">
-<meta name="dcterms.date" content="2025-10-06">
-<meta name="description" content="How do machines turn patterns into predictions?">
+<meta name="dcterms.date" content="2025-10-20">
+<meta name="description" content="From uncertainty to structure: the hidden geometry of data">
 
-<title>Patterns, numbers, and optimization – Joy’s Byte-Sized Blog</title>
+<title>Probabilty, clustering, linear algebra – Joy’s Byte-Sized Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,10 +118,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Patterns, numbers, and optimization</h1>
+      <h1 class="title">Probabilty, clustering, linear algebra</h1>
                   <div>
         <div class="description">
-          How do machines turn patterns into predictions?
+          From uncertainty to structure: the hidden geometry of data
         </div>
       </div>
                           <div class="quarto-categories">
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 6, 2025</p>
+        <p class="date">October 20, 2025</p>
       </div>
     </div>
     
@@ -163,21 +163,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="chapter-recap-chapters-1-3" class="level2">
-<h2 class="anchored" data-anchor-id="chapter-recap-chapters-1-3">Chapter Recap: Chapters 1-3</h2>
-<p>Ananthaswamy introduces pattern recognition as the essence of machine learning, using animal imprinting (like ducklings) to motivate how both brains and machines learn from data. It then presents Rosenblatt’s perceptron as an early learning machine, explaining weights, bias, linear decision boundaries, and the basic idea of supervised learning. He shows how real‑world entities are translated into numerical vectors so machines can process them, emphasizing feature representation and high‑dimensional spaces. It introduces the language of linear models and regression, setting up later knowledge that rely on vectors, inner products, and geometric intuition. What’s more intriguin is his analogy of “a marble in a bowl”. Optimization and gradiet descent rely on the method of learning as rolling downhill on an error surface to minimize loss. Historical work on adaptive filters and Widrow–Hoff’s LMS algorithm shows how iterative updates make models gradually improve their predictions.</p>
+<section id="chapter-recap-chapters-4-6" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-recap-chapters-4-6">Chapter Recap: Chapters 4 – 6</h2>
+<p>In these chapters, Ananthaswamy introduces probability and Bayesian thinking as tools for reasoning under uncertainty in machine learning. He connects probabilistic models and classification with ideas like likelihood, priors, and updating beliefs based on observed data. Of which there are groupings of similar data points, likely using clustering and dimensionality‑reduction ideas such as principal component analysis (PCA). It’s how “similarity” can be formalized mathematically so machines can discover structure without explicit labels. And then there are matrices, the bane of my existence in MATH 1410. The linear algebra—matrices, eigenvectors, and transformations are the backbone of many learning algorithms. It explains how matrix operations compactly describe high‑dimensional computations in neural networks and other models.</p>
 </section>
 <section id="my-thoughts" class="level2">
 <h2 class="anchored" data-anchor-id="my-thoughts">My thoughts</h2>
-<p>When I first started learning about machine learning, I assumed it required incredibly fancy math right from the start. What surprised me is how far you can get with a very simple idea: notice a pattern, make a guess, see how wrong you were, then nudge your internal “settings” to do a little better next time. That is essentially what the perceptron and gradient descent are doing. I like to picture a machine staring at a pile of labeled examples—say, images tagged “cat” or “not cat.” Each example gets turned into a list of numbers, and the machine learns a rule (a line or plane in some abstract space) that tries to separate the cat points from the non‑cat points. Every time the rule misclassifies an example, the machine tweaks its weights so that the misclassified point moves closer to the correct side of the boundary. Over many iterations, those tiny corrections accumulate into something that suddenly looks like “intelligence”: the machine starts getting new examples right.</p>
-<p>At its core, machine learning is about turning messy, real‑world data into reliable predictions by gradually uncovering patterns hidden in numbers. To many, the perceptron is a perfect starting point because it is both simple and surprisingly powerful: it takes inputs (like pixel values or measurements), multiplies them by adjustable weights, adds them up, and decides which side of a threshold the result falls on. When the perceptron gets an example wrong, it updates its weights in the direction that would have pushed the prediction toward the correct answer next time. Over several updates, the model carves out a boundary in the data space that separates one class from another. Even though to me, this sounds mechanical, it captures a key intuition that learning can emerge from a basic rule of “nudge toward less error.”</p>
+<p>One of the things I struggle with in real life is uncertainty: not knowing which decision is best, not being sure what will happen next. Probability gives machines a structured way to handle exactly that feeling. When I think about probabilistic models, I imagine the machine as a careful bookkeeper of beliefs. It assigns degrees of belief to different possibilities and then updates those beliefs as new data arrives. Instead of insisting that something “is” or “is not” true, the machine says, “Given what I’ve seen so far, this explanation is more likely than that one.” That mindset changes how I look at data, too. It encourages me to see each new data point not as proof, but as another clue that shifts the odds in one direction or another.</p>
+<p>At the same time, there is this beautiful geometric side to learning that really appeals to me. When I read about clustering and dimensionality reduction, I imagine standing in a crowded room where everyone is speaking at once. My brain naturally groups similar voices and filters out noise; clustering algorithms do something similar for data. They measure similarity between points and pull together those that “sound alike,” forming natural groups even when nobody has labeled them in advance. Dimensionality reduction and matrices add another layer: they let the machine rotate, squish, and stretch data in high‑dimensional space so that important directions stand out and redundant ones fade into the background. I like to tell readers that, under the hood, machine learning is as much about reshaping spaces as it is about crunching numbers. Once I started visualizing data as clouds of points in a strange geometry, a lot of machine learning suddenly felt more intuitive.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="percepton.png" class="img-fluid figure-img"></p>
-<figcaption>Visualization of a perceptron</figcaption>
+<p><img src="pca.png" class="img-fluid figure-img"></p>
+<figcaption>PCA</figcaption>
 </figure>
 </div>
-<p>For me, the most powerful mental image from these early chapters is the “bowl” of the loss landscape. I picture myself dropping a marble (the current model) into a bumpy bowl (the error surface). The marble rolls downhill, following the steepest direction, which is what the gradient tells us. In practice, this looks like repeatedly adjusting the parameters in the direction that most quickly reduces error. What I love about this story is how human it feels: we, too, learn by trial and error. The only difference is that a machine can keep perfect score, compute exactly how each mistake should change its internal settings, and repeat that process millions of times without getting bored. When I frame machine learning this way for readers, they often realize that “learning from data” is less mysterious than it sounds—just a disciplined, algorithmic form of the same pattern‑spotting we rely on every day.</p>
 
 
 </section>
