@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Joy Wang">
-<meta name="dcterms.date" content="2025-11-29">
-<meta name="description" content="I dread working during holidays. Even more so when we have new items and sales I know will get people to ask questions.">
+<meta name="dcterms.date" content="2025-11-02">
+<meta name="description" content="When Straight Lines Aren’t Enough: Nonlinear Tricks in Machine Learning">
 
-<title>A little help goes a long way – Joy’s Byte-Sized Blog</title>
+<title>Kernels, physics, early neural networks – Joy’s Byte-Sized Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,17 +118,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">A little help goes a long way</h1>
+      <h1 class="title">Kernels, physics, early neural networks</h1>
                   <div>
         <div class="description">
-          I dread working during holidays. Even more so when we have new items and sales I know will get people to ask questions.
+          When Straight Lines Aren’t Enough: Nonlinear Tricks in Machine Learning
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Book</div>
                 <div class="quarto-category">Learning</div>
-                <div class="quarto-category">Job</div>
-                <div class="quarto-category">Holidays</div>
               </div>
                   </div>
   </div>
@@ -146,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 29, 2025</p>
+        <p class="date">November 2, 2025</p>
       </div>
     </div>
     
@@ -165,74 +163,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>It’s not like I’m adverse to helping the customers who frequent the place where I work. It’s just sometimes, they have questions I do not have the answer to. These include “why does the pan look the way it is?”, “if this carbon-steel pan darkens unevenly while seasoning, does that mean the iron distribution in the alloy is off”, “what is the micron thickness of the Teflon layer on this nonstick pan?”, “does the shape of the dimples under the lid actually change condensation patterns, or is that just marketing?”, or “why does this model of pressure cooker reach only 13 PSI instead of 15 PSI?”</p>
-<p>…I myself would love to know the answers, but unfortunately this is not stored knowledge for the two hundred something items we have for purchase.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="potspans.png" class="img-fluid figure-img"></p>
-<figcaption>Too many items to remember</figcaption>
-</figure>
-</div>
-<section id="needed-information" class="level2">
-<h2 class="anchored" data-anchor-id="needed-information">Needed Information</h2>
-<p>I know and can give my own two cents for most things, like if the soap contains any ingredients that can irritate the skin or what the function of the big tweezers are (apparently they’re for plating).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="platingtongs.jpg" class="img-fluid figure-img"></p>
-<figcaption>Plating Tongs</figcaption>
-</figure>
-</div>
-<p><br>However, I should be able to tell someone what exactly the Scanpan Pro SB+ Skillet’s “stratanium” coating is. That’s where ChatGPT comes in. I asked them for the most important points of our name brands. These include All-Clad, Scanpan, Le Creuset, Staub, Demeyere, Mauviel, and GreenPan.</p>
+<section id="chapter-recap-chapters-7-9" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-recap-chapters-7-9">Chapter Recap: Chapters 7-9</h2>
+<p>In these chapters, Ananthaswamy introduces kernel methods and support vector machines, showing how the “kernel trick” lets models handle non‑linear patterns. It does this by implicitly working in higher‑dimensional spaces, emphasizing the geometry behind separating data with hyperplanes after a clever transformation. And with a little help from physics, we get to see networks from an energy‑based viewpoint. Hopfield networks and energy minimization illustrate how systems settle into low‑energy states that encode stored patterns and memories. Using the story of early neural‑network criticism (like limits of simple perceptrons), Ananthswamy explains why multilayer networks and new mathematical insights were needed. He also touches on universal approximation results, which show that even relatively simple neural networks can, in principle, represent very complex functions.</p>
 </section>
-<section id="cookware-brand-training" class="level2">
-<h2 class="anchored" data-anchor-id="cookware-brand-training">Cookware Brand Training</h2>
-<p>Here was what ChatGPT thought I should know.</p>
-<section id="all-clad-usa" class="level4">
-<h4 class="anchored" data-anchor-id="all-clad-usa">🔥 ALL-CLAD (USA)</h4>
-<p>What it’s known for: professional, high-performance stainless-steel cookware.</p>
-<p>Key Points - Fully Clad Construction: Heat spreads evenly from bottom to rim (no hot spots). - Made in USA: Many customers value this. - Multiple lines: - D3: classic tri-ply, great all-purpose. - D5: 5-ply, added durability + more even heating. - HA1: Hard-anodized nonstick, induction-compatible. - Lifetime durability — very long-lasting.</p>
-<p>Best for: sear lovers, serious home cooks, customers who want longevity and precision control.</p>
-</section>
-<section id="scanpan-denmark" class="level4">
-<h4 class="anchored" data-anchor-id="scanpan-denmark">🥘 SCANPAN (Denmark)</h4>
-<p>What it’s known for: high-quality, safe nonstick that’s durable and eco-friendly.</p>
-<p>Key Points - Stratanium / Stratanium+ Nonstick: Exceptionally durable; can handle metal utensils. - Sear-capable nonstick: Performs more like stainless than typical nonstick. - Environmentally conscious: Recycled aluminum. - Oven-safe, dishwasher-safe depending on line.</p>
-<p>Best for: people who want easy cooking and cleaning but dislike “flimsy” nonstick.</p>
-</section>
-<section id="le-creuset-france" class="level4">
-<h4 class="anchored" data-anchor-id="le-creuset-france">🍲 LE CREUSET (France)</h4>
-<p>What it’s known for: iconic, colorful enameled cast iron.</p>
-<p>Key Points - Amazing heat retention and even cooking. - Great for slow cooking, braising, roasting, baking bread. - Non-reactive enamel: No seasoning needed, won’t absorb flavors. - Huge color selection → great gift item. - Lifetime warranty.</p>
-<p>Best for: customers who want heirloom-quality cookware, comfort foods, soups, bread baking.</p>
-</section>
-<section id="staub-france" class="level4">
-<h4 class="anchored" data-anchor-id="staub-france">🍛 STAUB (France)</h4>
-<p>What it’s known for: rustic, high-end enameled cast iron with superior moisture retention.</p>
-<p>Key Points - Nubby “self-basting” lid: Recycles condensation; keeps dishes moist. - Matte black interior enamel: Great browning + easier to maintain. - Excellent durability and heat retention.</p>
-<p>Best for: serious cooks, slow-cooking fans, anyone comparing Staub vs Le Creuset.</p>
-</section>
-<section id="demeyere-belgium" class="level4">
-<h4 class="anchored" data-anchor-id="demeyere-belgium">🍝 DEMEYERE (Belgium)</h4>
-<p>What it’s known for: top-tier stainless steel, engineered for specific cooking tasks.</p>
-<p>Key Points - 7-ply construction: Extremely efficient heating. - Silvinox finish: Stays shiny; resists discoloration. - Specialized pan designs: - Fry pans optimized for frying - Saucier optimized for sauces - Welded handles: No rivets → more hygienic.</p>
-<p>Best for: tech-minded cooks, stainless-steel enthusiasts upgrading from All-Clad.</p>
-</section>
-<section id="mauviel-france" class="level4">
-<h4 class="anchored" data-anchor-id="mauviel-france">🥘 MAUVIEL (France)</h4>
-<p>What it’s known for: luxury copper cookware — the choice of professional chefs.</p>
-<p>Key Points - Unmatched heat responsiveness: Quick heating AND cooling. - Copper exterior + stainless interior (99% of consumer lines). - Stunning presentation: Great for tableside serving.</p>
-<p>Best for: advanced cooks, gourmet kitchens, customers who want the best heat control.</p>
-</section>
-<section id="greenpan" class="level4">
-<h4 class="anchored" data-anchor-id="greenpan">🫕 GREENPAN</h4>
-<p>What it’s known for: popular ceramic nonstick with healthier, toxin-free messaging.</p>
-<p>Key Points - Thermolon ceramic nonstick: PFAS-free. - Great for eggs and low-fat cooking. - Lightweight and easy cleanup. - Good price point compared to premium brands.</p>
-<p>Best for: gift shoppers, first-time cooks, or customers wanting “health-focused” nonstick.</p>
-</section>
-</section>
-<section id="any-good" class="level2">
-<h2 class="anchored" data-anchor-id="any-good">Any good?</h2>
-<p>I think that ChatGPT did a pretty good job summarizing each part a customer might want to know about, like what each brand is good for or material wise. It’s quite a lot to memorize, but if I hit the important I think this holiday season will be much easier to deal with.</p>
+<section id="my-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="my-thoughts">My thoughts</h2>
+<p>We all know that real‑world data is very messy, as classes twist around each other, overlap, and form intricate shapes. The kernel methods mentioned give a way to push past that limitation. I think os it with a simple image: separating data points on a flat sheet of paper without straight lines. Now imagine I pick up parts of the paper and fold it into a complex 3D shape. Suddenly, a flat slice through that 3D shape can separate the classes that were hopelessly tangled before. Kernels let machines do that kind of folding in an abstract, high‑dimensional space without explicitly performing the folding.</p>
+<p>What I also find fascinating is how ideas from physics and early neural‑network debates shaped where we are now. Energy‑based models, for example, view learning as a kind of energy minimization: the system prefers low‑energy configurations that correspond to stable patterns or memories. That image of a landscape with valleys represents patterns connects with the optimization story from earlier chapters. Then there is the history of perceptrons and the criticism that almost “killed” neural networks for a while (how bizzare). I’m always struck by how a well‑founded critique (that single‑layer perceptrons can’t solve certain problems) led to a deeper probing. It’s where the need for multilayer networks and better training methods arose. And the more I think about it, the history of AI learning feels very dramatized.</p>
 
 
 </section>
