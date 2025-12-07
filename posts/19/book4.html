@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Joy Wang">
-<meta name="dcterms.date" content="2025-12-03">
-<meta name="description" content="I have a license but no car yet. I want to get a car but how do I make it last forever?">
+<meta name="dcterms.date" content="2025-11-25">
+<meta name="description" content="What makes deep neural networks trainable, and why do their quirks at scale still surprise researchers?">
 
-<title>How to maintain a car – Joy’s Byte-Sized Blog</title>
+<title>Backprop, vision, frontiers – Joy’s Byte-Sized Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,15 +118,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">How to maintain a car</h1>
+      <h1 class="title">Backprop, vision, frontiers</h1>
                   <div>
         <div class="description">
-          I have a license but no car yet. I want to get a car but how do I make it last forever?
+          What makes deep neural networks trainable, and why do their quirks at scale still surprise researchers?
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Learning</div>
                 <div class="quarto-category">LLM</div>
+                <div class="quarto-category">Book</div>
+                <div class="quarto-category">Learning</div>
               </div>
                   </div>
   </div>
@@ -144,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 3, 2025</p>
+        <p class="date">November 25, 2025</p>
       </div>
     </div>
     
@@ -163,16 +164,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>I have my driver’s license but no car to go with it yet. Currently, I have resigned myself to use my dad’s car when he allows me to, so when the day comes that I get a car for myself what do I do? As of now, he’s the one who takes it in for it’s maintenance, pumps the air in the tires, does everything you need to do in the hood, etc.</p>
+<section id="chapter-recap-chapters-10-12" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-recap-chapters-10-12">Chapter Recap: Chapters 10-12</h2>
+<p>It starts off focusing on backpropagation, explaining how the chain rule of calculus allows gradients to be computed efficiently in multilayer networks. Ananthaswamy shows how backprop and gradient descent together made modern deep learning practical by enabling large networks to learn from data. He then covers convolutional neural networks and their success in vision tasks such as object recognition and image classification. It explains how convolution, pooling, and layered feature extraction let machines automatically discover visual patterns like edges, textures, and shapes.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="dadscar.png" class="img-fluid figure-img"></p>
-<figcaption>“My” car</figcaption>
+<p><img src="cnn.png" class="img-fluid figure-img"></p>
+<figcaption>Convolutional neural networks visualization</figcaption>
 </figure>
 </div>
-<section id="things-to-know-before-buying-a-car" class="level2">
-<h2 class="anchored" data-anchor-id="things-to-know-before-buying-a-car">Things to know before buying a car</h2>
-<p>To see what I would need to know before even looking at cars, I asked Deep Seek to cover everything a new driver like me should know about cars making a decision. I made sure to pose as a teen (since that’s the skill level I am at) who has saved up enough to purchase their own car, but can have financial help from their parents (that way “I” am not purchasing recklessly).</p>
+<p>He concludes with open questions and the frontier of machine learning, including phenomena like benign overfitting, double descent, and grokking (understand something intuitively or by empathy) in large models. It links these puzzling behaviors, and the rise of large language models, to the broader theme that much of modern AI operates in a still‑mysterious mathematical “unknown land.”</p>
+</section>
+<section id="my-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="my-thoughts">My thoughts</h2>
+<p>For a long time, deep neural networks were more of a dream than a practical tool, mainly because nobody knew how to adjust all those layers efficiently. Backpropagation is the piece that clicked it all into place for me. I see deep networks as long chains of decisions: each layer transforms the data a bit, and at the end the model either gets it right or wrong. Backprop uses the chain rule from calculus to trace that final error backward, figuring out how much each earlier layer contributed to the mistake. Of couse, there’s the error signal flowing backward through the network like water through pipes, leaving behind tiny adjustments at every valve (weight) it passes. It’s fascinating and the reason why deep learning exploded, there was now a systematic way to update millions or billions of parameters in a coordinated way.</p>
+<p>Here, convolutional neural networks see images much differently, first as tiny patches and edges, then as motifs and textures, and finally as full objects. But then the frontier chapters remind everyone that, even with all this intuition, large models still behave in ways that surprise everyone. With double descent curves, grokking, and bizarre generalization patterns that defy simple explanations we’re slowly trying to reverse‑engineer why they work as well as they do.</p>
 
 
 </section>
