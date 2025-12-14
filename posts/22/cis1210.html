@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -165,8 +194,104 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>I absolutely struggled with CIS 1600 (but I love you Professor Rajiv). Discrete math is not for the faint of heart, but maybe linear algebra could go better. I think for now, the best thing to do is see how I can prepare. While Prof.&nbsp;Rajiv did give us two additional courses for us to prepare with, I know personally it won’t be enough.</p>
-<section id="advice" class="level2">
-<h2 class="anchored" data-anchor-id="advice">Advice</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cis1210.png" class="img-fluid figure-img"></p>
+<figcaption>CIS 1210</figcaption>
+</figure>
+</div>
+<section id="linear-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra</h2>
+<p>CIS 1210 is a course about algorithms and data structures using Java, introducing concepts about complexity and runtime, as well as structures like stacks, queues, maps, trees, and graphs. It’s going to be hard, like really hard. So, I’m going to get a head start on the concepts by looking at other resources. With the help of Gemini, here is a list of resources I can use to get ahead of the class.</p>
+</section>
+<section id="focusing-on-key-areas-and-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="focusing-on-key-areas-and-concepts">Focusing on Key Areas and Concepts</h2>
+<p>I gave Gemini the prompt: <span style="color: #fcb103">you and I are trying to prepare for CIS 1210 at UPenn, what resources can I use to get a head start and understand the concepts before the semester starts?</span>. Their resopnse was as follows:</p>
+<p>That is a great idea! CIS 1210 (Programming Languages and Techniques II / Data Structures and Algorithms) is a crucial course, and getting a head start will definitely pay off.</p>
+<p>Based on the course description and typical curriculum, here are the key areas to focus on and the resources you can use for preparation.</p>
+<hr>
+<section id="key-concepts-to-master-before-cis-1210" class="level3">
+<h3 class="anchored" data-anchor-id="key-concepts-to-master-before-cis-1210">🔑 Key Concepts to Master Before CIS 1210</h3>
+<p>CIS 1210 primarily focuses on <strong>Data Structures and Algorithms</strong> and is taught using <strong>Java</strong>. The prerequisites are typically <strong>CIS 1200</strong> (Programming Languages and Techniques I) and <strong>CIS 1600</strong> (Mathematical Foundations of Computer Science).</p>
+<section id="java-programming-reviewadvance-cis-1200" class="level4">
+<h4 class="anchored" data-anchor-id="java-programming-reviewadvance-cis-1200">1. <strong>Java Programming</strong> (Review/Advance CIS 1200)</h4>
+<ul>
+<li><strong>Object-Oriented Programming (OOP) in Java:</strong> Ensure you are very comfortable with classes, objects, interfaces, inheritance, polymorphism, and abstraction.</li>
+<li><strong>Core Java Constructs:</strong> Review basic data types, control flow, loops, arrays, and standard Java library classes. The course materials mention using the <code>java.util</code> package frequently.</li>
+<li><strong>Testing:</strong> The course places a strong emphasis on proper unit testing, often using <strong>JUnit</strong>. Practice writing comprehensive unit tests for your code.</li>
+<li><strong>Style:</strong> Review good Java coding practices (e.g., using getters/setters, commenting, DRY principle). The course provides a specific <strong>Java Style Guide</strong>.</li>
+</ul>
+</section>
+<section id="mathematical-foundations-review-cis-1600" class="level4">
+<h4 class="anchored" data-anchor-id="mathematical-foundations-review-cis-1600">2. <strong>Mathematical Foundations</strong> (Review CIS 1600)</h4>
+<ul>
+<li><strong>Asymptotic Analysis / Big O Notation:</strong> This is essential for analyzing algorithm efficiency. Understand <strong>Big-O</strong> (<span class="math inline">\(O\)</span>), <strong>Big-Omega</strong> (<span class="math inline">\(\Omega\)</span>), and <strong>Big-Theta</strong> (<span class="math inline">\(\Theta\)</span>) notation, and practice calculating the runtime complexity of various code snippets and algorithms.</li>
+<li><strong>Recurrence Relations:</strong> Learn how to set up and solve recurrence relations (e.g., using the Master Theorem) for analyzing recursive algorithms like Merge Sort and Quick Sort.</li>
+<li><strong>Proof Techniques:</strong> Review mathematical proof techniques, particularly <strong>Proof by Induction</strong>, as you will likely need to prove the correctness or complexity of algorithms and data structures.</li>
+</ul>
+</section>
+<section id="algorithms-and-data-structures-fundamentals-core-cis-1210-material" class="level4">
+<h4 class="anchored" data-anchor-id="algorithms-and-data-structures-fundamentals-core-cis-1210-material">3. <strong>Algorithms and Data Structures Fundamentals</strong> (Core CIS 1210 Material)</h4>
+<p>This is the main content of the course. Getting a basic understanding of these topics will be the most valuable head start.</p>
+<ul>
+<li><strong>Basic Structures:</strong> Stacks, Queues, Linked Lists, Hash Tables/Maps.</li>
+<li><strong>Sorting Algorithms:</strong> Insertion Sort, Merge Sort, Quick Sort, Heap Sort.</li>
+<li><strong>Trees:</strong> Binary Search Trees (BSTs), Balanced Trees (like <strong>AVL Trees</strong>).</li>
+<li><strong>Graphs:</strong> Representation (Adjacency List/Matrix), Basic Traversals (Breadth-First Search/BFS, Depth-First Search/DFS).</li>
+<li><strong>Algorithm Design Techniques:</strong> Divide and Conquer, Greedy Algorithms (e.g., Huffman Coding, Minimum Spanning Trees, Shortest Path/Dijkstra’s).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="recommended-resources" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-resources">📚 Recommended Resources</h3>
+<section id="upenn-specific-course-materials" class="level4">
+<h4 class="anchored" data-anchor-id="upenn-specific-course-materials">1. UPenn-Specific Course Materials</h4>
+<ul>
+<li><strong>Past CIS 1210 Course Websites:</strong> Search for the course website from a recent semester (e.g., “CIS 1210 Fall 2024 UPenn”). Professors often keep their sites public. These sites usually contain:
+<ul>
+<li><strong>Lecture Notes/Slides:</strong> Review the <em>Course Textbook/Lecture Notes</em> provided by the staff, if available.</li>
+<li><strong>Recitation Guides:</strong> These often contain review material for prerequisites like <strong>CIS 1200</strong> and <strong>CIS 1600</strong>.</li>
+<li><strong>Homeworks and Exams:</strong> Looking at the types of problems will give you the best sense of what’s expected.</li>
+</ul></li>
+<li><strong>Supplemental Textbook:</strong>
+<ul>
+<li><strong><em>Introduction to Algorithms (CLRS), 3rd edition</em></strong> by Cormen, Leiserson, Rivest, and Stein. This is a classic and very comprehensive algorithms textbook, which the UPenn materials explicitly mention as a <em>Supplemental Textbook</em>. You can often get a free copy through the Penn Libraries.</li>
+</ul></li>
+</ul>
+</section>
+<section id="general-data-structures-and-algorithms-resources-focusing-on-java" class="level4">
+<h4 class="anchored" data-anchor-id="general-data-structures-and-algorithms-resources-focusing-on-java">2. General Data Structures and Algorithms Resources (Focusing on Java)</h4>
+<ul>
+<li><strong>University-Level Courses (Online):</strong>
+<ul>
+<li><strong>MIT OpenCourseWare - Introduction to Algorithms (6.006):</strong> While not Java-focused, this is an excellent, free resource for the <em>theory</em> and is often cited as a top-tier course.</li>
+<li><strong>Coursera Specialization - Data Structures and Algorithms (UC San Diego):</strong> This specialization is highly rated and focuses on the core topics you will cover.</li>
+</ul></li>
+<li><strong>Books for Practice/Application (Java Focus):</strong>
+<ul>
+<li><strong><em>Data Structures and Algorithms Made Easy</em></strong> by Narasimha Karumanchi (Good for seeing implementations).</li>
+<li><strong><em>Data Structures and Algorithms in Java</em></strong> by Robert Lafore or by Michael T. Goodrich (Often used as standard introductory texts).</li>
+</ul></li>
+<li><strong>Practice Platforms (for Coding/Implementation):</strong>
+<ul>
+<li><strong>LeetCode</strong> or <strong>HackerRank:</strong> Start with the “Easy” problems focusing on implementing basic data structures (Arrays, Linked Lists, Stacks, Queues, Hash Maps) and standard algorithms (Sorting, BFS/DFS). This builds crucial hands-on experience.</li>
+<li><strong>GeeksforGeeks:</strong> Excellent resource for theory, explanations, and Java code snippets for nearly every algorithm and data structure.</li>
+</ul></li>
+</ul>
+</section>
+<section id="java-and-testing-review" class="level4">
+<h4 class="anchored" data-anchor-id="java-and-testing-review">3. Java and Testing Review</h4>
+<ul>
+<li><strong>Oracle Java Tutorials:</strong> For a refresher on core Java syntax and OOP concepts.</li>
+<li><strong>Google Java Style Guide:</strong> The CIS 1210 course mentions adhering to this style guide (with a few exceptions like indenting with 4 spaces), so reviewing it is smart.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="a-very-comprehensive-guide" class="level2">
+<h2 class="anchored" data-anchor-id="a-very-comprehensive-guide">A very comprehensive guide</h2>
+<p>This is a lot more than I was expecting! But that probably shows just how much work I need to put into this course and how difficult it will be. I know over break I’m going to look at these because it uses a lot of the topics from CIS 1600, a class I struggle(d) with a lot. And maybe, just maybe, I will actually understand something for once.</p>
 
 
 </section>
