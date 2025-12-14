@@ -1,5 +1,5 @@
 ---
-title: LLM's, Hobbies, and the Philly Experience
+title: LLMs, Hobbies, and the Philly Experience
 listing:
   contents: posts
   sort: date desc
